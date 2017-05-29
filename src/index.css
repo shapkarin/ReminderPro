@@ -17,3 +17,12 @@ input {
 .form-inline {
   margin-bottom: 10px;
 }
+
+.list-item {
+  display: inline-block;
+}
+
+.delete-button {
+  float: right;
+  cursor: pointer;
+}
