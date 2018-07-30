@@ -1,4 +1,4 @@
-import { ADD_REMINDER } from '../constants';
+import { ADD_REMINDER, DELETE_REMINDER } from '../constants';
 
 const reminder = (action) => {
   return {
@@ -20,7 +20,7 @@ const reminders = (state = [], action) => {
       reminders = [...state, reminder(action)];
       console.log('remainders as state', reminders);
       return reminders;
-    case ADD_REMINDER:
+    case DELETE_REMINDER:
       reminders = removeById(state, action.id);
       return reminders;
     default:

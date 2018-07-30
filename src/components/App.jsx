@@ -12,7 +12,7 @@ class App extends Component {
   }
 
   deleteReminder(id) {
-    this.props.addReminder(id);
+    this.props.deleteReminder(id);
   }
 
   renderReminders(){
